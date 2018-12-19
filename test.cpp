@@ -30,7 +30,6 @@ int main(int argc, char** argv) {
     // Test 2 - single value constructor
     list1 = new LinkedList(10);
     str = list1->toString();
-    cout << str << endl;
     if(str != string("10"))
         cerr << "ERROR - test 2 failed (single value constructor)" << endl;
     else
@@ -43,7 +42,6 @@ int main(int argc, char** argv) {
     list1->push(2);
     list1->push(3);
     str = list1->toString();
-    cout << str << endl;
     if(str != string("3 2 1"))
         cerr << "ERROR - test 3 failed (push method)" << endl;
     else
@@ -56,7 +54,6 @@ int main(int argc, char** argv) {
     list1->append(2);
     list1->append(3);
     str = list1->toString();
-    cout << str << endl;
     if(str != string("1 2 3"))
         cerr << "ERROR - test 4 failed (append method)" << endl;
     else
@@ -71,7 +68,6 @@ int main(int argc, char** argv) {
     after = 2;
     list1->insertAfter(4,after);
     str = list1->toString();
-    cout << str << endl;
     if(str != string("1 3 2 4"))
         cerr << "ERROR - test 5 failed (insert after method)" << endl;
     else
